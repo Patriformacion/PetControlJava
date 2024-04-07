@@ -11,12 +11,12 @@ public class CreateBDPetControl extends SQLiteOpenHelper {
     //Versión de la BD
     public static final int VERSION = 1;
     //Nombre de la tabla (tantas como necesitemos)
-    public static final String USUARIOS = "Usuarios";
-    public static final String MASCOTAS = "Mascotas";
+    public static final String OWNERS = "Propietarios";
+    public static final String PETS = "Mascotas";
 
-    public static final String CITAS = "CitasMedicas";
+    public static final String VISITS = "CitasMedicas";
 
-    public static final String HISTORIAL = "HistorialMedico";
+    public static final String REMINDER = "Recordatorios";
     //Atributos o campos de la tabla
     private static final String CODIGO = "codigo";
     private static final String TITULO = "titulo";
