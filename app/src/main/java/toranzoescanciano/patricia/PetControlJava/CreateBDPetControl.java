@@ -22,13 +22,9 @@ public class CreateBDPetControl extends SQLiteOpenHelper {
     private static final String CODIGO = "codigo";
     private static final String TITULO = "titulo";
     private static final String AUTOR = "autor";
-    //private static final int NUM_PAGINAS = 0;
-
-    /*
     //---Tabla Usuarios
     private static final String ID = "id";
     private static final String NOMBRE = "nombre";
-    */
 
     //Constructor
     public CreateBDPetControl(Context context) {
@@ -37,18 +33,13 @@ public class CreateBDPetControl extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        //Creamos la tabla Libros con las columnas: código, título y autor + num_paginas
-        /*db.execSQL("CREATE TABLE if not exists Libros (codigo integer primary key autoincrement " +
-                "not null, titulo text, autor text);");*/
+        //Creamos la tabla Usuarios con las columnas: id, nombre
+        /*db.execSQL("CREATE TABLE if not exists Usuarios (id integer primary key autoincrement " +
+                "not null, nombre text);");*/
 
         db.execSQL("CREATE TABLE if not exists " + OWNERS + "(" + CODIGO + " text primary key, " +
                 TITULO + " text, " + AUTOR + " text);");
 
-
-        /*db.execSQL("CREATE TABLE if not exists " + TABLA + "(" + CODIGO + " text primary key, " +
-                TITULO + " text, " + AUTOR + " text, " + NUM_PAGINAS + " int);");*/
-
-        /*
         db.execSQL("CREATE TABLE if not exists " + TABLA2 + "(" + ID + " integer primary key " +
                 "autoincrement not null, " + NOMBRE + " text);");
          */
