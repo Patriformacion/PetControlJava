@@ -4,6 +4,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+/*Comentario de Triiis21*/
 public class CreateBDPetControl extends SQLiteOpenHelper {
     //---Variables estáticas
     //Nombre de la BD
