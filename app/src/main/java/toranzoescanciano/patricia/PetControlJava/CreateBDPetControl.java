@@ -40,11 +40,6 @@ public class CreateBDPetControl extends SQLiteOpenHelper {
         db.execSQL("CREATE TABLE if not exists " + OWNERS + "(" + CODIGO + " text primary key, " +
                 TITULO + " text, " + AUTOR + " text);");
 
-
-        /*db.execSQL("CREATE TABLE if not exists " + TABLA + "(" + CODIGO + " text primary key, " +
-                TITULO + " text, " + AUTOR + " text, " + NUM_PAGINAS + " int);");*/
-
-        /*
         db.execSQL("CREATE TABLE if not exists " + TABLA2 + "(" + ID + " integer primary key " +
                 "autoincrement not null, " + NOMBRE + " text);");
          */
