@@ -13,7 +13,7 @@ import androidx.lifecycle.ViewModelProvider;
 import toranzoescanciano.patricia.PetControlJava.databinding.FragmentGalleryBinding;
 
 public class GalleryFragment extends Fragment {
-
+        //HOLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
     private FragmentGalleryBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -22,11 +22,11 @@ public class GalleryFragment extends Fragment {
                 new ViewModelProvider(this).get(GalleryViewModel.class);
 
         binding = FragmentGalleryBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
+        View room = binding.getRoot();
 
         final TextView textView = binding.textGallery;
         galleryViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
-        return root;
+        return room;
     }
 
     @Override
